@@ -1,28 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const Gallery = () => {
-    const [images, setImages] = useState([]);
-    const [error, setError] = useState(null);
+const ImageGallery = () => {
+  const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(response => response.json())
-            .then(data => setImages(data.images))
-            .catch(error => setError(error.message));
-    }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://fakestoreapi.com/products");
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-    return (
-        <div className="container p-4 mx-auto">
-            {error && <p className="text-red-500">{error}</p>}
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-                {images.map((image, index) => (
-                    <div key={index} className="overflow-hidden rounded-lg shadow-lg">
-                        <img src={image.image} alt={image.alt} className="object-cover w-full h-full transition duration-300 ease-in-out transform hover:scale-105" />
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-}
+    fetchData();
+  }, []);
 
-export default Gallery;
+  return (
+    <div className="container mx-auto p-4 ">
+      <h1 className="text-2xl font-bold mb-4">Product Image Gallery</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-20">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="border p-4 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+          >
+            <img
+              src={product.image}
+              alt={product.title}
+              className="w-full h-48 object-cover mb-4"
+            />
+            <h2 className="text-lg font-semibold">{product.title}</h2>
+            <p className="text-gray-600">${product.price}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ImageGallery;
