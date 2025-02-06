@@ -78,7 +78,8 @@ const Navbar = () => {
                     `${
                       isActive ? "text-orange-500" : "text-gray-300"
                     } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`
-                  } >
+                  }
+                >
                   Gallery
                 </NavLink>
                 <NavLink
@@ -87,12 +88,14 @@ const Navbar = () => {
                     `${
                       isActive ? "text-orange-500" : "text-gray-300"
                     } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`
-                  } >
+                  }
+                >
                   Contact
                 </NavLink>
               </div>
             </div>
           </div>
+
           <div className="flex -mr-2 md:hidden">
             <button
               onClick={toggleMenu}
@@ -170,8 +173,11 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/contact"
-             className= {
-                   ({isActive}) => `${isActive ? "text-orange-500" : "text-gray-300"} px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`}
+            className={({ isActive }) =>
+              `${
+                isActive ? "text-orange-500" : "text-gray-300"
+              } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`
+            }
           >
             Contact
           </NavLink>

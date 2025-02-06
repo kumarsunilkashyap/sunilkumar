@@ -19,12 +19,14 @@ const ImageGallery = () => {
 
   return (
     <div className="container mx-auto p-4 ">
-      <h1 className="text-2xl font-bold mb-4">Product Image Gallery</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center font-mono bold">
+        Product Image Gallery
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-20">
         {products.map((product) => (
           <div
             key={product.id}
-            className="border p-4 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            className="border  p-4 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300"
           >
             <img
               src={product.image}
