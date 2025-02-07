@@ -1,36 +1,33 @@
+// Skills.js
 import React from "react";
 
 const skills = [
-  "JavaScript",
-  "React",
-  "Node.js",
   "HTML",
   "CSS",
+  "JavaScript",
+  "React",
   "Tailwind CSS",
-  "GitHub",
-  "Advanced Excel",
   "Power Bi",
-  "Tally Prime",
+  "Excel Dashboard",
+  "Python",
 ];
 
-const Skill = () => {
+const Skills = () => {
   return (
-    <>
-      <div id="skill" className="min-h-screen p-5 bg-gray-100">
-        <h2 className="mb-8 text-3xl font-bold text-center">My Skill</h2>
-        <ul className="grid md:grid-cols-4 grid-cols-2 gap-4">
-          {skills.map((skill, index) => (
-            <li
-              key={index}
-              className="p-3 text-center  bg-white rounded-lg  hover:bg-gray-200 shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              {skill}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+    <div className="py-10 min-h-screen bg-gray-100">
+      <h2 className="text-4xl font-bold text-center mb-8">My Skills</h2>
+      <ul className="flex flex-wrap justify-center gap-4">
+        {skills.map((skill, index) => (
+          <li
+            key={index}
+            className="px-4 py-2 text-2xl bg-white shadow rounded transform transition duration-300 ease-in-out hover:scale-105 hover:bg-blue-100 hover:shadow-lg"
+          >
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
-export default Skill;
+export default Skills;
