@@ -25,14 +25,10 @@ const router = createBrowserRouter(
       <Route path="skill" element={<Skill />} />
       <Route path="service" element={<Service />} />
       <Route path="project" element={<Project />} />
-      <Route
-        loader={ productInfoLoader}
-        path="gallery"
-        element={<Gallery />
-        } />
+      <Route loader={productInfoLoader} path="gallery" element={<Gallery />} />
 
       <Route path="contact" element={<Contact />} />
-      {/* <Route path="*" element={<HomePage />} /> */}
+
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

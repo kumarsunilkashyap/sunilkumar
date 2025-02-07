@@ -26,7 +26,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `${
                       isActive ? "text-orange-500" : "text-gray-300"
-                    } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`
+                    } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-ornage-500 hover:bg-gray-700`
                   }
                 >
                   {" "}
