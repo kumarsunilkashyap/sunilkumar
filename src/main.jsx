@@ -14,7 +14,7 @@ import Skill from "./Pages/Skill.jsx";
 import Service from "./Pages/Service.jsx";
 import Project from "./Pages/Project.jsx";
 import Contact from "./Pages/Contact.jsx";
-import Gallery from "./Pages/Gallery.jsx";
+import Gallery, { productInfoLoader } from "./Pages/Gallery.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
 
 const router = createBrowserRouter(
@@ -25,7 +25,11 @@ const router = createBrowserRouter(
       <Route path="skill" element={<Skill />} />
       <Route path="service" element={<Service />} />
       <Route path="project" element={<Project />} />
-      <Route path="gallery" element={<Gallery />} />
+      <Route
+        loader={ productInfoLoader}
+        path="gallery"
+        element={<Gallery />
+        } />
 
       <Route path="contact" element={<Contact />} />
       {/* <Route path="*" element={<HomePage />} /> */}
