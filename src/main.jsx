@@ -16,6 +16,7 @@ import Project from "./Pages/Project.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Gallery, { productInfoLoader } from "./Pages/Gallery.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
+import Login from "./Pages/Login.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,10 +27,9 @@ const router = createBrowserRouter(
       <Route path="service" element={<Service />} />
       <Route path="project" element={<Project />} />
       <Route loader={productInfoLoader} path="gallery" element={<Gallery />} />
-
       <Route path="contact" element={<Contact />} />
-
       <Route path="*" element={<PageNotFound />} />
+      <Route path="login" element={<Login />} />
     </Route>
   )
 );
