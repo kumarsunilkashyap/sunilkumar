@@ -18,6 +18,7 @@ import Gallery, { productInfoLoader } from "./Pages/Gallery.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
 import Login from "./Pages/Login.jsx";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
