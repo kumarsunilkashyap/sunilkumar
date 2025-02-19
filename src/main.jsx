@@ -18,11 +18,10 @@ import Gallery, { productInfoLoader } from "./Pages/Gallery.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
 import Login from "./Pages/Login.jsx";
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<HomePage />} />
+      <Route path="sunilkumar" element={<HomePage />} />
       <Route path="about" element={<About />} />
       <Route path="skill" element={<Skill />} />
       <Route path="service" element={<Service />} />

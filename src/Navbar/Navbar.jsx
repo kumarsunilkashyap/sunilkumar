@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="flex items-baseline ml-10 space-x-4">
                 <NavLink
-                  to="/"
+                  to="/sunilkumar"
                   className={({ isActive }) =>
                     `${
                       isActive ? "text-orange-500" : "text-gray-300"
