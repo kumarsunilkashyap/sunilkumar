@@ -15,18 +15,18 @@ const projects = [
     title: "E Store Project",
     description:
       "In this dashboard i have create a card in sum of sales, average of sales, sum of profit, and sum of discount. Column chart is create a Categary and month wise sum of Sales and Pie Chart is include in Resign wise sales. in line chart is using for month and day wise sales. and matrics.",
-    imageUrl: "EStore.gif",
+    imageUrl: { EStore },
   },
   {
     title: "Sale Dashboard",
     description:
       "In this dashboard i have created in segment by total sale, ship mode totol sale. region by total sale sub category by total sale .",
-    imageUrl: "Sale.png",
+    imageUrl: { Sale },
   },
   {
     title: "Sale and Purchase",
     description: "This is a brief description of Project Four.",
-    imageUrl: "Saleandpurchase.png",
+    imageUrl: { Saleandpurchase },
   },
 ];
 
