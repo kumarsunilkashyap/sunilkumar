@@ -1,5 +1,5 @@
 import React from "react";
-import HomePagePhoto from "../Images/HomePagePhoto.png";
+import HomePagePhoto from "../assets/HomePagePhoto.png";
 const About = () => {
   return (
     <>

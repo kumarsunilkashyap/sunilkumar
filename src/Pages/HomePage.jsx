@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HomePagePhoto from "../Images/HomePagePhoto.png";
+import HomePagePhoto from "../assets/HomePagePhoto.png";
 const HomePage = () => {
   return (
     <div

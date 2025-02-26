@@ -1,8 +1,8 @@
 import React from "react";
-import DmartSaleProject from "../Images/DmartSaleProject.gif";
-import EStore from "../Images/EStore.gif";
-import Sale from "../Images/Sale.png";
-import Saleandpurchase from "../Images/Saleandpurchase.png";
+import DmartSaleProject from "../assets/DmartSaleProject.gif";
+import EStore from "../assets/EStore.gif";
+import Sale from "../assets/Sale.png";
+import Saleandpurchase from "../assets/Saleandpurchase.png";
 
 const projects = [
   {
