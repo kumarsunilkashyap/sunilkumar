@@ -1,9 +1,15 @@
+import React from "react";
+import DmartSaleProject from "../Images/DmartSaleProject.gif";
+import EStore from "../Images/EStore.gif";
+import Sale from "../Images/Sale.png";
+import Saleandpurchase from "../Images/Saleandpurchase.png";
+
 const projects = [
   {
     title: "D Mart Sale Project",
     description:
       "In this dashboard i have get inside of ship mode wise sale , segment wise sale Region wise sale and also i have get inside of category wise sale and profit. In this dashboard i have create in Power Bi Software.",
-    imageUrl: "DmartSaleProject.gif",
+    imageUrl: { DmartSaleProject },
   },
   {
     title: "E Store Project",

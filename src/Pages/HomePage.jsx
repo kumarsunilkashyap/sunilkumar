@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import HomePagePhoto from "../Images/HomePagePhoto.png";
 const HomePage = () => {
   return (
     <div id="home" className="flex flex-col min-h-screen bg-gray-100">
@@ -28,7 +29,7 @@ const HomePage = () => {
           </div>
           <div className="w-full p-6 text-center md:w-full md:text-right">
             <img
-              src="HomePagePhoto.png"
+              src={HomePagePhoto}
               alt="Profile"
               className="h-auto mx-auto rounded shadow-lg md:w-auto"
             />

@@ -1,5 +1,5 @@
 import React from "react";
-
+import HomePagePhoto from "../Images/HomePagePhoto.png";
 const About = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const About = () => {
       >
         <div className="p-4 md:w-1/3">
           <img
-            src="HomePagePhoto.png"
+            src={HomePagePhoto}
             alt="About"
             className="h-96 rounded-lg shadow-lg"
           />
