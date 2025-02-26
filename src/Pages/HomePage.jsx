@@ -26,7 +26,7 @@ const HomePage = () => {
                 View Projects
               </NavLink>
               <NavLink
-                to="gdgdfgd"
+                to="resume"
                 className="px-6 py-3 text-lg font-semibold text-white transition duration-300 ease-in-out transform bg-blue-700 rounded-full shadow-lg hover:bg-blue-900 hover:scale-105"
               >
                 My Resume

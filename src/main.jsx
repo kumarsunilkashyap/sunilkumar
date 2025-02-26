@@ -17,6 +17,7 @@ import Contact from "./Pages/Contact.jsx";
 import Gallery, { productInfoLoader } from "./Pages/Gallery.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
 import Login from "./Pages/Login.jsx";
+import Resume from "./Pages/Resume.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="*" element={<PageNotFound />} />
       <Route path="login" element={<Login />} />
+      <Route path="resume" element={<Resume />} />
     </Route>
   )
 );

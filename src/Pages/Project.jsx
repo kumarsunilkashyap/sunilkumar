@@ -9,24 +9,24 @@ const projects = [
     title: "D Mart Sale Project",
     description:
       "In this dashboard i have get inside of ship mode wise sale , segment wise sale Region wise sale and also i have get inside of category wise sale and profit. In this dashboard i have create in Power Bi Software.",
-    imageUrl: { DmartSaleProject },
+    imageUrl: DmartSaleProject,
   },
   {
     title: "E Store Project",
     description:
       "In this dashboard i have create a card in sum of sales, average of sales, sum of profit, and sum of discount. Column chart is create a Categary and month wise sum of Sales and Pie Chart is include in Resign wise sales. in line chart is using for month and day wise sales. and matrics.",
-    imageUrl: { EStore },
+    imageUrl: EStore,
   },
   {
     title: "Sale Dashboard",
     description:
       "In this dashboard i have created in segment by total sale, ship mode totol sale. region by total sale sub category by total sale .",
-    imageUrl: { Sale },
+    imageUrl: Sale,
   },
   {
     title: "Sale and Purchase",
     description: "This is a brief description of Project Four.",
-    imageUrl: { Saleandpurchase },
+    imageUrl: Saleandpurchase,
   },
 ];
 
