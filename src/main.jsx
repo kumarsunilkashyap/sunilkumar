@@ -26,10 +26,10 @@ const router = createBrowserRouter(
       <Route path="resume" element={<Resume />} />
       <Route path="project" element={<Project />} />
       <Route path="about" element={<About />} />
-      <Route path="skill" element={ <Skill />} />
+      <Route path="skill" element={<Skill />} />
       <Route path="service" element={<Service />} />
       <Route loader={productInfoLoader} path="gallery" element={<Gallery />} />
-      <Route path="contact" element={ <Contact />} />
+      <Route path="contact" element={<Contact />} />
       <Route path="*" element={<PageNotFound />} />
       <Route path="login" element={<Login />} />
     </Route>
