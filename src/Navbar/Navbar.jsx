@@ -23,7 +23,7 @@ const Navbar = () => {
               <div className="flex items-baseline ml-10 space-x-4">
                 <NavLink
                   to="/sunilkumar"
-                  className= {({ isActive }) =>
+                  className={({ isActive }) =>
                     `${
                       isActive ? "text-orange-500" : "text-gray-300"
                     } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-ornage-500 hover:bg-gray-700`
@@ -39,7 +39,7 @@ const Navbar = () => {
                     } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`
                   }
                 >
-                  About 
+                  About
                 </NavLink>
                 <NavLink
                   to="skill"
@@ -102,6 +102,41 @@ const Navbar = () => {
                 >
                   Login
                 </NavLink>
+
+                <div className="relative group">
+                  <NavLink
+                    to="service"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? "text-orange-500" : "text-gray-300"
+                      } px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700`
+                    }
+                  >
+                    My Work
+                  </NavLink>
+                  <div className="absolute left-0 hidden w-48 mt-2 bg-gray-800 rounded-md shadow-lg group-hover:block">
+                    <NavLink
+                      to="webdevelopment"
+                      className={({ isActive }) =>
+                        `${
+                          isActive ? "text-orange-500" : "text-gray-300"
+                        } block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white`
+                      }
+                    >
+                      Web Development
+                    </NavLink>
+                    <NavLink
+                      to="appdevelopment"
+                      className={({ isActive }) =>
+                        `${
+                          isActive ? "text-orange-500" : "text-gray-300"
+                        } block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white`
+                      }
+                    >
+                      App Development
+                    </NavLink>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
